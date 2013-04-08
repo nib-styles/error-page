@@ -1,0 +1,6 @@
+{
+  "name": "error-page",
+  "version": "0.1.0",
+  "files": ["bg-error.png"],
+  "styles": ["index.scss"]
+}
