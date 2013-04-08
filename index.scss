@@ -1,9 +1,15 @@
-@function error-page-image-url($path) {
-  @return url("../local/error-page/#{$path}");
-}
-
-.panel-chief {
-  background: error-page-image-url('bg-error.png') no-repeat 0 0;
+.panel-chief,
+.system-error {
+  background: component-url("nib-styles-error-page", "bg-error.png") no-repeat 0 0;
   padding-left: 268px + $spacing-normal;
   min-height: 540px;
+
+  @media (max-width: 250px) {
+    padding-left: 0;
+    min-height: auto;
+    background: none;
+    .system-error__extended {
+      display: none;
+    }
+  }
 }
