@@ -3,11 +3,14 @@
   background: component-url("nib-styles-error-page", "bg-error.png") no-repeat 0 0;
   padding-left: 268px + $spacing-normal;
   min-height: 540px;
+  width: 540px;
+  margin: spacing(6) auto;
 
   @media (max-width: 250px) {
-    padding-left: 0;
+    padding: 0 spacing(3);
     min-height: auto;
     background: none;
+    width: auto;
     .system-error__extended {
       display: none;
     }
