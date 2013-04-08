@@ -1,0 +1,9 @@
+@function error-page-image-url($path) {
+  @return url("../local/error-page/#{$path}");
+}
+
+.panel-chief {
+  background: error-page-image-url('bg-error.png') no-repeat 0 0;
+  padding-left: 268px + $spacing-normal;
+  min-height: 540px;
+}
