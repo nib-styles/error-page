@@ -1,4 +1,3 @@
-.panel-chief,
 .system-error {
   background: component-url("nib-styles-error-page", "bg-error.png") no-repeat 0 0;
   padding-left: 268px + $spacing-normal;
@@ -15,4 +14,21 @@
       display: none;
     }
   }
+}
+
+body.is-system-error {
+  @media (max-width:250px) {
+    background: #fff;
+    & > header,
+    & > footer {
+      display: none;
+    }
+  }
+}
+
+.panel-chief {
+  background: component-url("nib-styles-error-page", "bg-error.png") no-repeat 0 0;
+  padding-left: 268px + $spacing-normal;
+  min-height: 540px;
+  width: 540px;
 }
