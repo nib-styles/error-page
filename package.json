@@ -1,0 +1,9 @@
+{
+  "name": "@nib-styles/error-page",
+  "version": "0.2.0",
+  "main.css": "index.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nib-styles/error-page.git"
+  }
+}
